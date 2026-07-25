@@ -1,0 +1,36 @@
+<!-- command prompt m mkdir se project folder bnayenge 
+then cd krke usme jyenge
+then code . krke vs code m project open ho jayega
+
+
+<!-- mkdir  folder crete
+then requiremnts file bnayenge or usme usies library likehenge -->
+
+
+
+ptyhon --version     python check
+python -m venv venv    # virtual envornment create
+.\venv\Scripts\Activate # virtual environment activate 
+
+<!-- # pip install -r requirments.txt     libraries install  -->
+ -->
+import numpy as np 
+import pandas as pd
+import seaborn as sns
+import matplotlib.pyplot as plt
+from sklearn.preprocessing import StandardScaler, OneHotEncoder
+from sklearn.model_selection import train_test_split
+from sklearn.linear_model import LogisticRegression
+
+
+pd.read_csv("C:\Users\Administrator\CancerDetectionProject\data\Cancer_Data.csv")
+
+git commands
+
+
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/akanksha806/Cancer-Detection-Project.git
+git push -u origin main
