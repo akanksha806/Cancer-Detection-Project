@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/Administrator/CancerDetectionProject/mlruns/828349877872341255/fef16cec5a7c4884b978b945293d57c4/artifacts
+end_time: 1785127517966
+entry_point_name: ''
+experiment_id: '828349877872341255'
+lifecycle_stage: active
+run_id: fef16cec5a7c4884b978b945293d57c4
+run_name: treasured-skink-167
+run_uuid: fef16cec5a7c4884b978b945293d57c4
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1785127510833
+status: 3
+tags: []
+user_id: Administrator

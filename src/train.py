@@ -4,6 +4,18 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import accuracy_score, confusion_matrix
 import os
 import sys
+import mlflow
+from sklearn.metrics import (
+    accuracy_score,
+    confusion_matrix,
+    precision_score,
+    recall_score,
+    f1_score
+)
+
+mlflow.set_experiment("Cancer Detection Model Experiment")
+
+
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
 from datapreprocessing.preprocess import Data
@@ -21,13 +33,33 @@ x_train, x_test, y_train, y_test = train_test_split(
 
 preprocessor = Data()
 
-x_train = preprocessor.preprocess_data(x_train)
-x_test = preprocessor.preprocess_data(x_test)
+transformer = preprocessor.preprocess_data(x_train)
 
-model = LogisticRegression(max_iter=1000)
-model.fit(x_train, y_train)
+x_train = transformer.fit_transform(x_train)
+x_test = transformer.transform(x_test)
 
-y_pred = model.predict(x_test)
 
-score = accuracy_score(y_test, y_pred)
-print("Accuracy:", score)
+#from here the model experiment is starting
+with mlflow.start_run():
+    model = LogisticRegression()
+    model.fit(x_train,y_train)
+
+    y_pred = model.predict(x_test)
+
+#here we are calculate the metrices of the model
+    acc_score = accuracy_score(y_test,y_pred)
+    precision = precision_score(y_test,y_pred,pos_label='M')
+    recall = recall_score(y_test,y_pred,pos_label='M')
+    score = f1_score(y_test,y_pred,pos_label='M')
+
+    # storing the model metrices
+    mlflow.log_metric("accuracy",acc_score)
+    mlflow.log_metric("precision",precision)
+    mlflow.log_metric("recall",recall)
+    mlflow.log_metric("F1_score",score)
+
+    #logging the model
+    mlflow.sklearn.log_model(model, artifact_path="LogisticRegression")
+
+    # message
+    print("model saved succesfully")

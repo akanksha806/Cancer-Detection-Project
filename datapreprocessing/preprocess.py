@@ -67,11 +67,10 @@ class Data:
             ('encoder', OneHotEncoder(handle_unknown='ignore'))
         ])
 
-  # Column Transformer
         preprocessor = ColumnTransformer(transformers=[
         ("num", num_pipeline, num_col),
         ("cat", cat_pipeline, cat_col)
-       ])
-        preprocessed_data = preprocessor.fit_transform(x)
+        ])
+        return preprocessor
 
-        return preprocessed_data
+  
