@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/Administrator/CancerDetectionProject/mlruns/828349877872341255/9789a5887a114863b61f747e02244082/artifacts
+end_time: 1785213972185
+entry_point_name: ''
+experiment_id: '828349877872341255'
+lifecycle_stage: active
+run_id: 9789a5887a114863b61f747e02244082
+run_name: Logistic Regression
+run_uuid: 9789a5887a114863b61f747e02244082
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1785213965743
+status: 3
+tags: []
+user_id: Administrator

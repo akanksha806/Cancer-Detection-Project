@@ -1,0 +1,14 @@
+aliases: []
+creation_timestamp: 1785215230211
+current_stage: None
+description: ''
+last_updated_timestamp: 1785215230211
+name: CancerDetectionModel
+run_id: daa33714270643abb4dd920fd47dd154
+run_link: ''
+source: file:///C:/Users/Administrator/CancerDetectionProject/mlruns/828349877872341255/daa33714270643abb4dd920fd47dd154/artifacts/Logistic_Regression
+status: READY
+status_message: null
+storage_location: file:///C:/Users/Administrator/CancerDetectionProject/mlruns/828349877872341255/daa33714270643abb4dd920fd47dd154/artifacts/Logistic_Regression
+user_id: null
+version: 1
