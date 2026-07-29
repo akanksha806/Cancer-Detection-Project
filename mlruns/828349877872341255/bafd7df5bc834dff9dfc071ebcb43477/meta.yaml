@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/Administrator/CancerDetectionProject/mlruns/828349877872341255/bafd7df5bc834dff9dfc071ebcb43477/artifacts
+end_time: 1785298558100
+entry_point_name: ''
+experiment_id: '828349877872341255'
+lifecycle_stage: active
+run_id: bafd7df5bc834dff9dfc071ebcb43477
+run_name: Naive Bayes
+run_uuid: bafd7df5bc834dff9dfc071ebcb43477
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1785298552870
+status: 3
+tags: []
+user_id: Administrator

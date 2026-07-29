@@ -4,7 +4,6 @@ import os
 import sys
 import mlflow
 import mlflow.sklearn
-
 from sklearn.linear_model import LogisticRegression
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.ensemble import RandomForestClassifier

@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/Administrator/CancerDetectionProject/mlruns/828349877872341255/4c0081c843f842b5a28d7911367b7d0e/artifacts
+end_time: 1785298885562
+entry_point_name: ''
+experiment_id: '828349877872341255'
+lifecycle_stage: active
+run_id: 4c0081c843f842b5a28d7911367b7d0e
+run_name: Decision Tree
+run_uuid: 4c0081c843f842b5a28d7911367b7d0e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1785298881135
+status: 3
+tags: []
+user_id: Administrator
