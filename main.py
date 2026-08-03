@@ -5,10 +5,12 @@ import mlflow.pyfunc
 
 app = FastAPI()
 
+# model = mlflow.pyfunc.load_model(
+#     model_uri="models:/CancerDetectionModel/1"
 model = mlflow.pyfunc.load_model(
-    model_uri="models:/CancerDetectionModel/1"
+    "mlruns/828349877872341255/daa33714270643abb4dd920fd47dd154/artifacts/Logistic_Regression"
 )
-
+# artificats url
 
 class CancerData(BaseModel):
     radius_mean: float
