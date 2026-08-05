@@ -4,7 +4,7 @@ import requests
 # ---------------------------------------------------------
 # CONFIG
 # ---------------------------------------------------------
-API_URL = "http://cancer-backend:8000/predict" # change if backend is hosted elsewhere  # change this if your FastAPI runs elsewhere
+API_URL = "http://3.25.111.9:8000/predict" # change if backend is hosted elsewhere  # change this if your FastAPI runs elsewhere
 
 st.set_page_config(page_title="Cancer Detection", page_icon="🩺", layout="centered")
 
