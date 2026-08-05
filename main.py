@@ -5,6 +5,13 @@ import mlflow.pyfunc
 
 app = FastAPI()
 
+
+@app.get("/")
+def home():
+    return {
+        "message": "Breast Cancer Detection API is Running 🚀"
+    }
+
 # model = mlflow.pyfunc.load_model(
 #     model_uri="models:/CancerDetectionModel/1"
 model = mlflow.pyfunc.load_model(
